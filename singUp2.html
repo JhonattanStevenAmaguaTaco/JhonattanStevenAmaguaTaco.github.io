@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>DocMInd</title>
+</head>
+<body>
+  <h1>DocMInd Register</h1>
+  
+  <table>
+    
+    <tr>
+        <td>E-mail:</td>
+        <td><input type="text" id="emailImputId"></td>
+    </tr>
+    <tr>
+        <td>Contraseña:</td>
+        <td><input type="password" id="passwordImputId"></td>
+    </tr>
+    <tr>
+        <td>Confirm Password:</td>
+        <td><input type="password" id="confirmPasswordImputId"></td>
+    </tr>
+    <tr>
+      <td colspan="2"><button onclick="registrarse()">Registrarse</button></td>
+    </tr>
+  </table>
+
+  <script>
+    function registrarse() {
+      var emailVar = document.getElementById("emailImputId").value;
+      var passwordVar = document.getElementById("passwordImputId").value;
+      var confirmPasswordVar = document.getElementById("confirmPasswordImputId").value;       
+      console.log("Correo electrónico: " + emailVar);
+      console.log("Contraseña: " + passwordVar);
+      console.log("Contraseña Confirmada: " + confirmPasswordVar);
+    }
+  </script>
+</body>
+</html>

@@ -5,11 +5,21 @@
 </head>
 <body>
     <h1 align = "center">
-        Sing Up
+        Sing Up DocMInd
     </h1>
     <center><input type="text" id="emailImput" placeholder="Enter your e-mail"></center>
     <center><input type="password" id="paswordImput" placeholder="Enter your password"></center>
     <center><input type="password" id="confirmPaswordImput" placeholder="Confirm your password"></center>
-    <center><input type="submit"> </center>
+    <center><input type="submit" onclick="registrarse()"> </center>
+    <script>
+        function registrarse() {   
+            var emailVar = document.getElementById("emailImput").value;
+            var passwordVar = document.getElementById("paswordImput").value;
+            var confirmPasswordVar = document.getElementById("confirmPaswordImput").value;      
+            console.log("E-mail: " + emailVar);
+            console.log("Password : " + passwordVar);
+            console.log("ConfirmPassword " + confirmPasswordVar);
+          }
+    </script>
 </body>
 </html>
